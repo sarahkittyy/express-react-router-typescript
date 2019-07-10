@@ -20,7 +20,7 @@ export default class Home extends React.Component<{}, HomeState>
 	public render()
 	{
 		return <h1 className="header">
-			Hello, home!
+			what the fwiggin HECK
 		</h1>
 	}
 };

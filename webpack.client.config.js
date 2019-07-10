@@ -3,14 +3,15 @@ const webpack = require('webpack');
 
 module.exports = {
 	mode: 'development',
-	entry: [
-		'webpack-hot-middleware/client',
-		path.resolve(__dirname, 'src/app/Main.tsx'),
-	],
+	entry: {
+		app: [
+			path.resolve(__dirname, 'src/app/Main.tsx'),
+		]
+	},
 	output: {
 		filename: 'bundle.js',
 		path: path.resolve(__dirname, 'public/js'),
-		publicPath: '/public/'
+		publicPath: 'public'
 	},
 	target: 'web',
 	module: {
@@ -18,7 +19,7 @@ module.exports = {
 			{
 				test: /\.tsx?$/,
 				exclude: /node_modules/,
-				loader: 'ts-loader'
+				loader: 'ts-loader',
 			},
 			{
 				test: /\.css$/,
@@ -28,14 +29,18 @@ module.exports = {
 		]
 	},
 	resolve: {
+		modules: [
+			'node_modules'
+		],
 		extensions: ['.tsx', '.ts', '.css', '.js', '.jsx', '.json'],
 	},
 	devtool: 'source-map',
-	plugins: [
-		new webpack.HotModuleReplacementPlugin(),
-	],
 	devServer: {
-		contentBase: 'public/',
-		hot: true,
+		contentBase: 'public',
+		port: 3000,
+	},
+	node: {
+		__dirname: true,
+		__filename: true
 	}
 };
