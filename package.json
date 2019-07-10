@@ -1,0 +1,8 @@
+{
+  "name": "react-router-express-hmr",
+  "version": "1.0.0",
+  "main": "build/server.js",
+  "repository": "git@github.com:sarahkittyy/express-react-router-typescript-hmr.git",
+  "author": "sarahkittyy <sarahohlin1@gmail.com>",
+  "license": "MIT"
+}
