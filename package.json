@@ -4,5 +4,33 @@
   "main": "build/server.js",
   "repository": "git@github.com:sarahkittyy/express-react-router-typescript-hmr.git",
   "author": "sarahkittyy <sarahohlin1@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/node": "^12.6.2",
+    "@types/react": "^16.8.23",
+    "@types/react-dom": "^16.8.4",
+    "@types/react-router": "^5.0.3",
+    "@types/react-router-dom": "^4.3.4",
+    "@types/webpack": "^4.4.34",
+    "@types/webpack-dev-middleware": "^2.0.3",
+    "@types/webpack-hot-middleware": "^2.16.5",
+    "css-loader": "^3.0.0",
+    "style-loader": "^0.23.1",
+    "ts-loader": "^6.0.4",
+    "typescript": "^3.5.3",
+    "webpack": "^4.35.3",
+    "webpack-cli": "^3.3.5",
+    "webpack-dev-middleware": "^3.7.0",
+    "webpack-hot-middleware": "^2.25.0"
+  },
+  "scripts": {
+    "build-client": "webpack --config webpack.client.config.js",
+    "build-server": "webpack --config webpack.server.config.js"
+  }
 }

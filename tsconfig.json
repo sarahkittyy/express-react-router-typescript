@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+		"jsx": "react",
+		"allowSyntheticDefaultImports": true,
+		"noImplicitAny": true,
+		"sourceMap": true,
+		"target": "es3",
+		"esModuleInterop": true,
+		"pretty": true
+	},
+	"include": ["src/**/*"],
+	"exclude": ["node_modules"]
+}
