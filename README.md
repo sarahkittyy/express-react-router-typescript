@@ -1,3 +1,3 @@
-# Express-React-Router-Typescript-HMR
+# Express-React-Router-Typescript
 
 Personal testing repo.
